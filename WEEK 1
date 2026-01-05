@@ -140,3 +140,13 @@ arr1 = np.arange(12).reshape(3, 4)
 arr2 = np.arange(4)
 
 print("\nBroadcasting Addition:\n", arr1 + arr2)
+if __name__ == "__main__":
+    print("\n==============================")
+    print("NumPy Week 1 – Code Preview")
+    print("==============================")
+    print("✔ Array creation")
+    print("✔ Reshaping & broadcasting")
+    print("✔ Random numbers & aggregation")
+    print("✔ Copies vs references")
+    print("\nRun completed successfully.")
+
