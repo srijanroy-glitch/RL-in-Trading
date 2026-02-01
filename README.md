@@ -1,55 +1,49 @@
-# RL-in-Trading
-project midterm submission
-Weeks 1–3
+RL IN TRADING
 
-This repository contains assignments and implementations from Weeks 1–3 of the Reinforcement Learning in Trading course, focusing on core reinforcement learning foundations.
+** Week 1 — RL Fundamentals
 
-Week 1 – MDP Modeling
+Introduction to Reinforcement Learning
 
-Modeled RL problems as Markov Decision Processes
+Explanation of states, actions, rewards
 
-Implemented:
+Basic Python setup and environment thinking NumPy, Pandas and matplotlib
 
-Bandit Walk (deterministic)
+** Week 2 — Environment Implementation
 
-Slippery Walk (stochastic)
+Downloading historical price data (e.g., using yfinance)
 
-Frozen Lake (4×4) MDP
+Defining the TradingEnv environment
 
-Verified Frozen Lake transitions using OpenAI Gym
+Representing agent observations and actions
 
-Week 2 – Multi-Armed Bandits
+** Week 3 — Q-Learning Agent
 
-Implemented bandit algorithms:
+Initializing the Q-table
 
-Greedy
+Setting learning rate, discount factor, and exploration rate
 
-ε-Greedy
+Writing the training loop
 
-Optimistic Initialization
+Updating Q-values using the Bellman equation
 
-Upper Confidence Bound (UCB)
+** Week 4 — Final Project
 
-Analyzed exploration vs exploitation
+Train the agent on real price data
 
-Plotted cumulative average rewards
+Evaluate trained RL agent
 
-Week 3 – Value Functions
+Compare against a Buy-and-Hold baseline
 
-Studied state-value and action-value functions
+Includes a complete working notebook: Final_Project.ipynb
 
-Performed policy evaluation using Bellman equations
+Actions:
 
-Prepared groundwork for dynamic programming methods
+0: Hold
 
-Tools
+1: Buy
 
-Python, NumPy, Matplotlib
+2: Sell
 
-OpenAI Gym (for validation)
+Reward: Portfolio value = cash + (stock * current price)
 
-Reference
-
-Grokking Reinforcement Learning
-
-Sutton & Barto
+The agent learns a Q-table that maps states to action values, helping decide the best action in each situation. After training, the agent is evaluated, and its performance is compared with a traditional buy-and-hold strategy.
